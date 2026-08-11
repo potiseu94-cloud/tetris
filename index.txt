@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <!-- 메인 게임 보드 -->
+        <div class="board-container">
+            <!-- 10칸 x 20칸 (칸당 30px 기준) -->
+            <canvas id="game-board" width="300" height="600"></canvas>
+        </div>
+        
+        <!-- 우측 사이드바 (정보 창) -->
+        <div class="sidebar">
+            <div class="info-box">
+                <h2>NEXT</h2>
+                <!-- 4칸 x 4칸 (칸당 30px 기준) -->
+                <canvas id="next-block" width="120" height="120"></canvas>
+            </div>
+            
+            <div class="info-box">
+                <h2>STAGE</h2>
+                <p id="stage">1</p>
+            </div>
+            
+            <div class="info-box">
+                <h2>SCORE</h2>
+                <p id="score">0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="tetris.js"></script>
+</body>
+</html>

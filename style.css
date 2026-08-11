@@ -1,0 +1,58 @@
+/* 기본 초기화 및 배경 설정 */
+body {
+    background-color: #2c3e50; /* 어두운 남색 배경 */
+    color: #ecf0f1; /* 밝은 회색 텍스트 */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 게임 전체를 감싸는 컨테이너 */
+.game-wrapper {
+    display: flex;
+    gap: 20px;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* 캔버스 공통 스타일 */
+canvas {
+    background-color: #111; /* 캔버스 내부 검은색 */
+    border: 2px solid #7f8c8d;
+    border-radius: 4px;
+    display: block;
+}
+
+/* 우측 사이드바 레이아웃 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 각 정보창(Next, Stage, Score) 스타일 */
+.info-box {
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #7f8c8d;
+}
+
+.info-box h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #f1c40f; /* 노란색 포인트 */
+    letter-spacing: 2px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
